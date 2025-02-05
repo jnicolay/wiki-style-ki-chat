@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki-Style KI-Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Wiki-Style KI-Chat</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Willkommen</h2>
+            <p>Diese Seite ist im Stil von Wikipedia gestaltet, aber enthält statt einer Suchleiste ein KI-Chat-Fenster.</p>
+        </section>
+        <section class="chat-container">
+            <div id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Frage die KI..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Senden</button>
+        </section>
+    </main>
+</body>
+</html>
